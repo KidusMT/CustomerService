@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "app.topic.customertopic",
+      "type": "java.lang.String",
+      "description": "Description for app.topic.customertopic."
+  }
+] }
