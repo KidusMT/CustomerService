@@ -1,4 +1,4 @@
-package project.swa.CustomerCommand.exception;
+package project.swa.CustomerService.exception;
 
 public class CustomerNotFoundException extends RuntimeException {
 

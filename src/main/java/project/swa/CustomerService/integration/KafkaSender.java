@@ -1,10 +1,10 @@
-package project.swa.CustomerCommand.integration;
+package project.swa.CustomerService.integration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
-import project.swa.CustomerCommand.service.CustomerDTO;
+import project.swa.CustomerService.service.CustomerDTO;
 
 @Component
 public class KafkaSender {

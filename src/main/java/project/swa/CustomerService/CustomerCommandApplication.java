@@ -1,4 +1,4 @@
-package project.swa.CustomerCommand;
+package project.swa.CustomerService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

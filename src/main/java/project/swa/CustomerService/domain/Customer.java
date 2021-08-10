@@ -1,4 +1,4 @@
-package project.swa.CustomerCommand.domain;
+package project.swa.CustomerService.domain;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

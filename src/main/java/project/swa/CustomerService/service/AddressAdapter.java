@@ -1,6 +1,6 @@
-package project.swa.CustomerCommand.service;
+package project.swa.CustomerService.service;
 
-import project.swa.CustomerCommand.domain.Address;
+import project.swa.CustomerService.domain.Address;
 
 public class AddressAdapter {
     public static Address getCustomer(AddressDTO addressDTO) {

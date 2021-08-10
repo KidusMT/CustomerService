@@ -1,6 +1,6 @@
-package project.swa.CustomerCommand.service;
+package project.swa.CustomerService.service;
 
-import project.swa.CustomerCommand.domain.Customer;
+import project.swa.CustomerService.domain.Customer;
 
 public class CustomerAdapter {
     public static Customer getCustomer(CustomerDTO customerDTO) {

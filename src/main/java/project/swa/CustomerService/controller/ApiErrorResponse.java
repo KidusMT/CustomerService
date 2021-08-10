@@ -1,4 +1,4 @@
-package project.swa.CustomerCommand.controller;
+package project.swa.CustomerService.controller;
 
 import org.springframework.http.HttpStatus;
 

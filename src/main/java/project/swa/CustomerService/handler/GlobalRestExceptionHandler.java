@@ -1,18 +1,12 @@
-package project.swa.CustomerCommand.handler;
+package project.swa.CustomerService.handler;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-import project.swa.CustomerCommand.controller.ApiErrorResponse;
-import project.swa.CustomerCommand.exception.CustomerNotFoundException;
-
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
+import project.swa.CustomerService.exception.CustomerNotFoundException;
 
 @ControllerAdvice
 @RestController

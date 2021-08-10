@@ -1,9 +1,7 @@
-package project.swa.CustomerCommand.service;
+package project.swa.CustomerService.service;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-import project.swa.CustomerCommand.domain.Address;
+import project.swa.CustomerService.domain.Address;
 
 @Data
 public class CustomerDTO {

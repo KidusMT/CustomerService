@@ -1,13 +1,13 @@
-package project.swa.CustomerCommand.controller;
+package project.swa.CustomerService.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import project.swa.CustomerCommand.exception.CustomerNotFoundException;
-import project.swa.CustomerCommand.integration.KafkaSender;
-import project.swa.CustomerCommand.service.CustomerDTO;
-import project.swa.CustomerCommand.service.CustomerService;
+import project.swa.CustomerService.exception.CustomerNotFoundException;
+import project.swa.CustomerService.integration.KafkaSender;
+import project.swa.CustomerService.service.CustomerDTO;
+import project.swa.CustomerService.service.CustomerService;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package project.swa.CustomerCommand.service;
+package project.swa.CustomerService.service;
 
 import lombok.Data;
 

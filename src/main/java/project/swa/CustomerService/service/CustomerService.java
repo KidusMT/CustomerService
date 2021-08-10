@@ -1,10 +1,10 @@
-package project.swa.CustomerCommand.service;
+package project.swa.CustomerService.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import project.swa.CustomerCommand.exception.CustomerNotFoundException;
-import project.swa.CustomerCommand.data.CustomerRepository;
-import project.swa.CustomerCommand.domain.Customer;
+import project.swa.CustomerService.exception.CustomerNotFoundException;
+import project.swa.CustomerService.data.CustomerRepository;
+import project.swa.CustomerService.domain.Customer;
 
 import java.util.List;
 import java.util.Optional;
