@@ -1,5 +1,7 @@
 package project.swa.CustomerService.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/customer")
 public class CustomerController {
+    private static final Logger logger = LoggerFactory.getLogger(CustomerController.class.getName());
 
     @Autowired
     private CustomerService customerService;
@@ -23,6 +26,7 @@ public class CustomerController {
 
     @GetMapping
     public ResponseEntity<List<CustomerDTO>> getCustomers() {
+        logger.info("Calling GET /customer");
         List<CustomerDTO> customerDTO1 = customerService.getAll();
         try {
             if (customerDTO1 != null) {
@@ -38,6 +42,7 @@ public class CustomerController {
 
     @PostMapping
     public ResponseEntity<CustomerDTO> addCustomer(@RequestBody CustomerDTO customerDTO) {
+        logger.info("Calling POST /customer");
         CustomerDTO customerDTO1 = customerService.add(customerDTO);
         try {
             if (customerDTO1 != null) {
@@ -54,6 +59,7 @@ public class CustomerController {
 
     @PutMapping("/{id}")
     public ResponseEntity<CustomerDTO> updateCustomer(@PathVariable String id, @RequestBody CustomerDTO customerDTO) {
+        logger.info("Calling PUT /customer");
         CustomerDTO customerDTO1 = customerService.update(id, customerDTO);
         if (customerDTO1 != null) {
             kafkaSender.send(customerDTO1);
@@ -65,6 +71,7 @@ public class CustomerController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<CustomerDTO> deleteCustomer(@PathVariable String id) {
+        logger.info("Calling DELETE /customer");
         CustomerDTO customerDTO1 = customerService.delete(id);
         if (customerDTO1 != null) {
             return new ResponseEntity<>(customerDTO1, HttpStatus.CREATED);

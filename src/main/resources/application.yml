@@ -1,3 +1,7 @@
+logging:
+  file:
+    name: /home/kidusmt/Documents/CS590-SA/elk-linux/spring-boot-elk2.log
+
 server:
   port: 8091
 
