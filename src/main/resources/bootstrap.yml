@@ -1,7 +1,6 @@
 spring:
   application:
     name: CustomerService
-  cloud: 
-    config: 
+  cloud:
+    config:
       url: http://localhost:8888
-

@@ -12,7 +12,7 @@ public class KafkaSender {
     @Autowired
     private KafkaTemplate<String, CustomerDTO> kafkaTemplate;
 
-    @Value("${app.topic.customertopic}")
+    @Value("${app.topic.customertopic}")//app.topic.customertopic
     private String topic;
 
     public void send(CustomerDTO customerDTO){
